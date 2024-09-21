@@ -1,38 +1,51 @@
-.App {
+/* src/components/Curriculum.css */
+
+.curriculum-container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.title {
   text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #333;
+  padding-bottom: 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section {
+  margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.section-title {
+  font-size: 1.8rem;
+  color: #1c87c9;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ul {
+  list-style-type: none;
+  padding-left: 0;
 }
 
-.App-link {
-  color: #61dafb;
+li {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #444;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li::before {
+  content: '• ';
+  color: #1c87c9;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
 }
